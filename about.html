@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja" id="about">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAKURO's Portfolio</title>
+    <link rel="stylesheet" href="https://tomap.co/ZeroPlusReset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="js/fullpage.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+      integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "rth6ygz",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+  </head>
+
+  <body class="glitch_set imgloaded fp-viewing-top render">
+    <div class="cursor">
+      <img src="images/film.png" alt="" />
+    </div>
+    <div class="cursor_back"></div>
+
+    <div class="hamburger_bg">
+      <div class="hamburger_bg_inner"></div>
+    </div>
+
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="hamburger_nav Menu">
+      <ul class="hamburger_nav_ul Menu-list" data-offset="10">
+        <li class="Menu-list-item" data-offset="20" onclick>
+          <a href="index.html#top">
+            HOME
+            <span class="Mask"><span>HOME</span></span>
+            <span class="Mask"><span>HOME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="16" onclick>
+          <a href="./about.html">
+            ABOUT ME
+            <span class="Mask"><span>ABOUT ME</span></span>
+            <span class="Mask"><span>ABOUT ME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="12" onclick>
+          <a href="./works.html">
+            MY WORKS
+            <span class="Mask"><span>MY WORKS</span></span>
+            <span class="Mask"><span>MY WORKS</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="8" onclick>
+          <a href="./index.html#contact">
+            GET IN TOUCH
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="4" onclick>
+          <a href="./index.html#endroll">
+            ENDROLL
+            <span class="Mask"><span>ENDROLL</span></span>
+            <span class="Mask"><span>ENDROLL</span></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!----------------- 映画館（黒い枠） ----------------->
+      <div class="theater">
+        <header>
+          <h1 class="underlayer_to_top">
+            <a href="#top">Takuro Ogawa</a>
+          </h1>
+          <div class="header_flex">
+            <div class="underlayer_icon_wrap">
+              <a href="https://twitter.com/@TAKURO_prg" target="_blank">
+                <!-- Twitter -->
+                <i class="fab fa-twitter theater_twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/takuro_nobishiro"
+                target="_blank"
+              >
+                <!-- インスタ -->
+                <i class="fab fa-instagram theater_insta"></i>
+              </a>
+              <a href="http://takuro-blog.taku-ringo.com/" target="_blank">
+                <!-- ブログ -->
+                <i class="fas fa-apple-alt theater_blog"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <a id="back_arrow_wrap" onclick="test()" href="./index.html#about">
+          <div class="back_arrow"></div>
+        </a>
+
+        <nav class="side_nav about_nav">
+          <ul id="menu">
+            <li data-menuanchor="1page">
+              <a href="#1page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="2page">
+              <a href="#2page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="3page">
+              <a href="#3page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="4page">
+              <a href="#4page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="5page">
+              <a href="#5page">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="scrollDown scrollDown_under">SCROLL DOWN</p>
+      </div>
+      <!-------------- 映画館（黒い枠）ここまで -------------->
+
+      <!------------- スクリーン（白い画面） ------------->
+      <div class="screen about">
+        <!-- About Me -->
+        <div class="about_section">
+          <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+          </div>
+          <div class="scroll_wrap">
+            <div class="title_wrap about_wrap">
+              <div class="post_about_title">
+                <div class="title_heading about_title_heading">
+                  <div class="content__title about_heading">
+                    <h2>About Me</h2>
+                  </div>
+                  <div class="content__title about_lines lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                  </div>
+                </div>
+                <div class="content__text">
+                  <p class="title_text">
+                    I treasure every meeting with you <br />
+                    and work I have.
+                  </p>
+                </div>
+                <div class="glitch_arrow content">
+                  <div class="arrow"></div>
+                </div>
+                <!-- 上下に動かす -->
+              </div>
+              <div class="title_img">
+                <div class="glitch___about-wrap">
+                  <div class="about_img"></div>
+                  <div class="about_img"></div>
+                  <div class="about_img"></div>
+                  <div class="about_img"></div>
+                  <div class="about_img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg">
+            <div class="bg_inner"></div>
+          </div>
+
+          <div class="about_content inner">
+            <div class="WHO_I_AM content_section" data-fadeIn>
+              <h3><span>01</span>&nbsp;&nbsp;WHO I AM</h3>
+              <div class="flexbox">
+                <div class="my_img">
+                  <img src="images/Me.JPG" alt="" />
+                </div>
+                <div class="profile">
+                  <h4 class="myName">小川拓朗</h4>
+                  <p>
+                    2000年、東京都荒川区に生まれる。スターバックスのアルバイトを経て、2020年よりWebデザイナー・フロントエンジニアとしての活動を開始。<br />
+                    現在は立教大学に通いながら、デザイン・コーディングなどの業務を行なっている。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ATTITUDE content_section" data-fadeIn>
+              <h3><span>02</span>&nbsp;&nbsp;ATTITUDE</h3>
+              <div class="flexwrap">
+                <div class="flex">
+                  <h4>サポート</h4>
+                  <p>SUPPORT</p>
+                  <div class="content_img">
+                    <img src="images/相談.jpeg" alt="" />
+                  </div>
+                  <p class="description">
+                    「丁寧に・こまめに・迅速に」を心掛けて柔軟に対応いたします。基本的に、1日
+                    最大で10時間 / 週7を作業に当てること
+                    が可能なので、疑問点・相談等ございましたら、いつでもお気軽にお声掛け下さい。お客様とのコミュニケーションが何よりも大切だと考えております。
+                  </p>
+                </div>
+                <div class="flex">
+                  <h4>デザイン観</h4>
+                  <p>VALUES FOR DESIGN</p>
+                  <div class="content_img">
+                    <img src="images/目的.jpeg" alt="" />
+                  </div>
+                  <p class="description">
+                    デザインとは課題を解決するものです。ただ単にどう見えるか、どう感じるかではなく、どう機能するかが大事なのです。なので可読性・可視性を高めつつ、大量にある他のサイトとは少し差別化できるようなデザインを作成いたします。お客様の良さ・色が最大限発揮できるよに、工夫を凝らします。
+                  </p>
+                </div>
+                <div class="flex">
+                  <h4>心持ち</h4>
+                  <p>SPILIT</p>
+                  <div class="content_img">
+                    <img src="images/感謝.jpeg" alt="" />
+                  </div>
+                  <p class="description">
+                    つくるものを通して、お客様の笑顔と人との繋がりが増えればいいなと思っております。また、私は感謝の気持ちをいつも大事にしております。当たり前だと思わずに、すべてのお客様との出逢いや仕事に感謝し、大切にしております。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="SERVICE content_section" data-fadeIn>
+              <h3><span>03</span>&nbsp;&nbsp;SERVICE</h3>
+              <div class="flexwrap">
+                <div class="flex">
+                  <h4>要件定義</h4>
+                  <p>REQUIREMENT DEFINITION</p>
+                  <div class="content_img definition">
+                    <img src="images/definition.png" alt="" />
+                  </div>
+                  <p class="description">
+                    お客様の抱えている課題や悩み、目的を解決・達成すべく、「誰に、何を見せて、どうなってもらうサイトなのか」を明確化いたします。ヒヤリングシートや相談・連絡を基に、一緒にサイトのコンセプトを設定していきます。Webサイト制作において、コンパスとなる重要なフェーズですので丁寧に行なわせていただきます。
+                  </p>
+                </div>
+                <div class="flex">
+                  <h4>デザイン</h4>
+                  <p>DESIGN</p>
+                  <div class="content_img">
+                    <img src="images/design.png" alt="" />
+                  </div>
+                  <p class="description">
+                    要件定義で決めた方針に沿って、デザインを作成いたします。コンセプトを保ちつつ、ユーザーが使いやすく、読みやすいデザインを心掛けております。また、デザインにメリハリをつけることで、伝えたい情報に優先順位を付けることも大事にしております。サイト
+                    が目的通り機能するよう、常にユーザーファーストを意識してデザインいたします。
+                  </p>
+                </div>
+                <div class="flex">
+                  <h4>コーディング</h4>
+                  <p>CODING</p>
+                  <div class="content_img">
+                    <img src="images/coding.png" alt="" />
+                  </div>
+                  <p class="description">
+                    実際にユーザーがデザインの意図を汲み取ることができるよう、細部までこだわってデザインに忠実にコーディングいたします。スマートフォンに対応するサイト、WordPressを用いた更新性の高いサイト、JSを用いた動きのあるサイトなど様々なサイトのコーディングを行なっております。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stripe"></div>
+
+          <footer class="about_footer">
+            <div class="footer_icon_wrap">
+              <div class="icon mail">
+                <a href="mailto:tackman8716@gmail.com" target="_blank">
+                  <i class="far fa-envelope-open"></i>
+                </a>
+                <a
+                  class="adress"
+                  href="mailto:tackman8716@gmail.com"
+                  target="_blank"
+                >
+                  tackman8716@gmail.com
+                </a>
+              </div>
+              <div class="icon">
+                <a href="https://twitter.com/@TAKURO_prg" target="_blank">
+                  <!-- Twitter -->
+                  <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/takuro_nobishiro"
+                  target="_blank"
+                >
+                  <!-- インスタ -->
+                  <i class="fab fa-instagram insta"></i>
+                </a>
+                <a href="http://takuro-blog.taku-ringo.com/" target="_blank">
+                  <!-- ブログ -->
+                  <i class="fas fa-apple-alt blog"></i>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!----------- スクリーン（白い画面）ここまで ----------->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+      integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"
+      integrity="sha256-se1LVUgnBaGcZvC0A7xkl3Lea7CRU5BQqUQT8ZvdH4A="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"
+      integrity="sha256-bmjt2PwiRoDWtD/Zbj9lJdkCvFIzYY7W/6q3ZcVjlu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.top_title {
+  font-family: "Trattatello";
+  position: absolute;
+  top: 43.865%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 500;
+}

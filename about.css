@@ -1,0 +1,209 @@
+/* About Me 〜上層〜 */
+.pre_about_title {
+  font-family: "Trattatello";
+  position: absolute;
+  top: 43.865%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+
+/* About Me 〜下層〜 */
+.about_section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.about_section h2 {
+  padding-top: 25px;
+}
+
+/* bg */
+@keyframes bgmove {
+  0% {
+    left: -100%;
+    opacity: 0.7;
+  }
+
+  100% {
+    left: 0%;
+    opacity: 0.3;
+  }
+}
+
+.bg {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.bg_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, #6cb8ff, #b7cf91, #ff9b6c);
+  animation: bgmove 8s infinite alternate;
+}
+
+.about_wrap {
+  background-color: #f4fff7;
+}
+
+.post_about_title {
+  font-family: "Trattatello";
+  position: absolute;
+  top: 48.5%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+
+.about_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/green_apple.jpeg) no-repeat 50% 50%;
+  background-color: var(--blend-color-1);
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+}
+/* 
+.about_screen {
+  
+} */
+
+/* about_content */
+.about_content {
+  background-color: #fff;
+  text-shadow: 1px 1px 6px #f4fff7;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8;
+  position: relative;
+  background-color: transparent;
+}
+
+.about_content .profile {
+  font-family: "CineCaption";
+}
+
+.content_section {
+  margin: 160px auto 80px;
+}
+
+.about_content h3 {
+  font-size: 50px;
+  font-family: "Trattatello";
+  text-shadow: 1px 1px 6px #f4fff7;
+  margin-bottom: 70px;
+  transform: translateX(-80px);
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.about_content h3 span {
+  color: #56d91c;
+}
+
+.about_content h3::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -90px;
+}
+
+/* WHO_I_AM */
+
+.my_img {
+  max-width: 390px;
+  height: 297px;
+  margin-right: 80px;
+  box-shadow: 3px 3px 36px #837171;
+}
+
+.my_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  max-width: 500px;
+}
+
+.myName {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.myName::after {
+  content: "TAKURO OGAWA";
+  font-size: 16px;
+  color: #88b675;
+  letter-spacing: 2.3px;
+  position: absolute;
+  bottom: -52%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.profile p {
+  margin: 44px auto 38px;
+  letter-spacing: 1.2px;
+}
+
+/* ATTITUDE, SERVICE */
+.flex h4 {
+  font-size: 27px;
+  font-family: "CineCaption";
+}
+
+.flex p:first-of-type {
+  font-size: 16px;
+  color: #88b675;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+  font-family: "CineCaption";
+}
+
+.content_img {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.content_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.definition {
+  width: 110px;
+  height: 110px;
+  margin: 25px auto;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.47;
+  letter-spacing: 1.2px;
+  font-family: "CineCaption";
+}
+
+.about_footer {
+  margin-top: 180px;
+}

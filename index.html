@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      name="description"
+      content="A glitch effect using CSS animations and clip-path"
+    />
+    <meta name="keywords" content="glitch, effect, css, animations" />
+    <meta name="author" content="Codrops" /> -->
+    <title>TAKURO's Portfolio</title>
+    <link rel="stylesheet" href="https://tomap.co/ZeroPlusReset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+    <link rel="stylesheet" href="css/top.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/works.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/endroll.css" />
+    <link rel="stylesheet" href="js/fullpage.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+      integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico">
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "rth6ygz",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+  </head>
+  <body class="glitch_set imgloaded fp-viewing-top render">
+    <div class="cursor">
+      <img src="images/film.png" alt="">
+    </div>
+    <div class="cursor_back"></div>
+
+    <div class="first_loading">
+      <div id="black"></div>
+
+      <!-- 幕 -->
+      <div id="curtain">
+        <div id="opening_title">
+          <img class="ot_fonts" src="images/ot_fonts.png" alt="">
+        </div>
+        <div class="curtains">
+          <img id="curtain1" class="curtain" src="images/curtain1.jpg" alt="">
+          <img id="curtain2" class="curtain" src="images/curtain2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="hamburger_bg">
+      <div class="hamburger_bg_inner"></div>
+    </div>
+
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="hamburger_nav Menu">
+      <ul class="hamburger_nav_ul Menu-list" data-offset="10">
+        <li class="Menu-list-item" data-offset="20" onclick>
+          <a href="index.html#top">
+            HOME
+            <span class="Mask"><span>HOME</span></span>
+            <span class="Mask"><span>HOME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="16" onclick>
+          <a href="./about.html">
+            ABOUT ME
+            <span class="Mask"><span>ABOUT ME</span></span>
+            <span class="Mask"><span>ABOUT ME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="12" onclick>
+          <a href="./works.html">
+            MY WORKS
+            <span class="Mask"><span>MY WORKS</span></span>
+            <span class="Mask"><span>MY WORKS</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="8" onclick>
+          <a href="./index.html#contact">
+            GET IN TOUCH
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="4" onclick>
+          <a href="./index.html#endroll">
+            ENDROLL
+            <span class="Mask"><span>ENDROLL</span></span>
+            <span class="Mask"><span>ENDROLL</span></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!----------------- 映画館（黒い枠） ----------------->
+    <div class="theater">
+      <header>
+        <h1 class="to_top">
+          <a href="#top">Takuro Ogawa</a>
+        </h1>
+        <div class="header_flex">
+          <div class="icon_wrap">
+            <a href="https://twitter.com/@TAKURO_prg" target="_blank">
+              <!-- Twitter -->
+              <i class="fab fa-twitter theater_twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/takuro_nobishiro" target="_blank">
+              <!-- インスタ -->
+              <i class="fab fa-instagram theater_insta"></i>
+            </a>
+            <a href="http://takuro-blog.taku-ringo.com/"  target="_blank">
+              <!-- ブログ -->
+              <i class="fas fa-apple-alt theater_blog"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <nav class="side_nav">
+        <ul id="menu">
+          <li data-menuanchor="top">
+            <a href="#top">
+              <span></span>
+            </a>
+          </li>
+          <li data-menuanchor="about">
+            <a href="#about">
+              <span></span>
+            </a>
+          </li>
+          <li data-menuanchor="works">
+            <a href="#works">
+              <span></span>
+            </a>
+          </li>
+          <li data-menuanchor="contact">
+            <a href="#contact">
+              <span></span>
+            </a>
+          </li>
+          <li data-menuanchor="endroll">
+            <a href="#endroll">
+              <span></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="scrollDown">SCROLL DOWN</p>
+    </div>
+    <!-------------- 映画館（黒い枠）ここまで -------------->
+
+      
+
+    <!------------- スクリーン（白い画面） ------------->
+    <div class="screen">
+      
+      <!-- カウントダウン -->
+      <div id="film-container" class="first_loading">
+        <div class="animated-flicker">
+          <svg
+            id="film-mask"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve"
+            width="100%"
+            height="100%"
+            preserveAspectRatio="none"
+            viewBox="0 0 400 225"
+          >
+            <rect class="rectangle01" width="400" height="225" />
+            <line
+              id="line-h"
+              class="line01"
+              x1="0"
+              y1="112.5"
+              x2="400"
+              y2="112.5"
+            />
+            <line id="line-v" class="line02" x1="200" y1="0" x2="200" y2="225" />
+          </svg>
+          <svg
+            id="film-countdown"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve"
+            width="100%"
+            height="100%"
+            viewBox="0 0 400 225"
+          >
+            <circle
+              id="circle-outer"
+              class="circle01"
+              cx="200"
+              cy="112.5"
+              r="95"
+            />
+            <circle
+              id="circle-inner"
+              class="circle01"
+              cx="200"
+              cy="112.5"
+              r="85"
+            />
+            <circle
+              class="circle02 animated-rotate"
+              cx="200"
+              cy="112.5"
+              r="494.5"
+            />
+            <g id="numbers" text-anchor="middle" class="no-select">
+              <!-- <text id="animated-text1" x="200.5" y="155">10</text>
+              <text id="animated-text2" x="200.5" y="155">9</text>
+              <text id="animated-text3" x="200.5" y="155">8</text>
+              <text id="animated-text4" x="200.5" y="155">7</text>
+              <text id="animated-text5" x="200.5" y="155">6</text> -->
+              <text id="animated-text1" x="200.5" y="155">5</text>
+              <text id="animated-text2" x="200.5" y="155">4</text>
+              <text id="animated-text3" x="200.5" y="155">3</text>
+              <text id="animated-text4" x="200.5" y="155">2</text>
+              <text id="animated-text5" x="200.5" y="155">1</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="fullpage_wrap">
+          <div id="fullpage">
+            <!-- トップページ -->
+            <div class="section">
+              <div class="glitch">
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+              </div>
+              <div class="top_title">
+                <div class="title_heading">
+                  <div class="content__title">
+                    <h2>
+                      TAKURO <br />
+                      OGAWA
+                    </h2>
+                  </div>
+                  <div class="content__title top_lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                  </div>
+                </div>
+                <div class="content__text">
+                  <p class="title_text">web designer / <br />markup enginner</p>
+                </div>
+              </div>
+              <div class="background_circle">
+              </div>
+              <div class="content">
+                <div class="glitch glitch__img_home-wrap">
+                  <div class="glitch__img_home"></div>
+                  <div class="glitch__img_home"></div>
+                  <div class="glitch__img_home"></div>
+                  <div class="glitch__img_home"></div>
+                  <div class="glitch__img_home"></div>
+                </div>
+                <div class="eden glitch__img_left-top-wrap">
+                  <div class="glitch__img_left-top"></div>
+                  <div class="glitch__img_left-top"></div>
+                  <div class="glitch__img_left-top"></div>
+                  <div class="glitch__img_left-top"></div>
+                  <div class="glitch__img_left-top"></div>
+                </div>
+                <div class="eden glitch__img_left-bottom-wrap">
+                  <div class="glitch__img_left-bottom"></div>
+                  <div class="glitch__img_left-bottom"></div>
+                  <div class="glitch__img_left-bottom"></div>
+                  <div class="glitch__img_left-bottom"></div>
+                  <div class="glitch__img_left-bottom"></div>
+                </div>
+                <div class="eden glitch__top-img-wrap">
+                  <div class="glitch__top-img"></div>
+                  <div class="glitch__top-img"></div>
+                  <div class="glitch__top-img"></div>
+                  <div class="glitch__top-img"></div>
+                  <div class="glitch__top-img"></div>
+                </div>
+                <div class="eden glitch__img_right-bottom-wrap">
+                  <div class="glitch__img_right-bottom"></div>
+                  <div class="glitch__img_right-bottom"></div>
+                  <div class="glitch__img_right-bottom"></div>
+                  <div class="glitch__img_right-bottom"></div>
+                  <div class="glitch__img_right-bottom"></div>
+                </div>
+                <div class="eden glitch__img_right-top-wrap">
+                  <div class="glitch__img_right-top"></div>
+                  <div class="glitch__img_right-top"></div>
+                  <div class="glitch__img_right-top"></div>
+                  <div class="glitch__img_right-top"></div>
+                  <div class="glitch__img_right-top"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Me -->
+            <div class="section about_section">
+              <div class="glitch">
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+              </div>
+              <div class="title_wrap">
+                <div class="pre_about_title">
+                  <div class="title_heading">
+                    <div class="content__title">
+                      <h2 class="about_title">About Me</h2>
+                    </div>
+                    <div class="content__title about_lines lines">
+                      <span class="line1 line"></span>
+                      <span class="line2 line"></span>
+                    </div>
+                  </div>
+                  <div class="content__text">
+                    <p class="title_text">
+                      I treasure every meeting with you <br />
+                      and work I have.
+                    </p>
+                  </div>
+                  <div class="content__title">
+                    <div class="more">
+                      <a onclick="test()" href="about.html">
+                        <p>Show me more</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background_circle">
+              </div>
+              <div class="top_content">
+                <div class="glitch___top-wrap">
+                  <div class="glitch__about_top"></div>
+                  <div class="glitch__about_top"></div>
+                  <div class="glitch__about_top"></div>
+                  <div class="glitch__about_top"></div>
+                  <div class="glitch__about_top"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Masterpieces -->
+            <div class="section">
+              <div class="glitch">
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+              </div>
+              <div class="pre_works_title">
+                <div class="title_heading works_title_heading">
+                  <div class="content__title">
+                    <h2 class="works_title">Masterpieces</h2>
+                  </div>
+                  <div class="content__title lines works_lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                  </div>
+                </div>
+                <div class="content__text">
+                  <p class="title_text">My works</p>
+                </div>
+                <div class="content__title">
+                  <div class="more works_more">
+                    <a onclick="test()" href="works.html">
+                      <p>Show me more</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="background_circle">
+              </div>
+              <div class="top_content">
+                <div class="glitch___top-wrap">
+                  <div class="glitch__works_top"></div>
+                  <div class="glitch__works_top"></div>
+                  <div class="glitch__works_top"></div>
+                  <div class="glitch__works_top"></div>
+                  <div class="glitch__works_top"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="section">
+              <div class="glitch">
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+                <div class="glitch__img"></div>
+              </div>
+              <div class="contact_title">
+                <div class="title_heading">
+                  <div class="content__title">
+                    <h2>Contact</h2>
+                  </div>
+                  <div class="content__title lines content_lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                  </div>
+                </div>
+                <div class="content__text contact_content">
+                  <p class="title_text">
+                    <div class="icon mail">
+                      <a href="mailto:tackman8716@gmail.com" target="_blank">
+                        <i class="far fa-envelope-open"></i>
+                      </a>
+                      <a
+                        class="adress"
+                        href="mailto:tackman8716@gmail.com"
+                        target="_blank"
+                      >
+                        tackman8716@gmail.com
+                      </a>
+                    </div>
+                    <div class="contact_icon_flex">
+                      <a class="twitter" href="https://twitter.com/@TAKURO_prg" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a class="insta" href="https://www.instagram.com/takuro_nobishiro" target="_blank">
+                        <i class="fab fa-instagram insta"></i>
+                      </a>
+                      <a class="contact_blog" href="http://takuro-blog.taku-ringo.com/"  target="_blank">
+                        <!-- ブログ -->
+                        <i class="fas fa-apple-alt"></i>
+                      </a>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="background_circle">
+              </div>
+              <div class="top_content">
+                <div class="glitch___top-wrap">
+                  <div class="glitch__contact_top"></div>
+                  <div class="glitch__contact_top"></div>
+                  <div class="glitch__contact_top"></div>
+                  <div class="glitch__contact_top"></div>
+                  <div class="glitch__contact_top"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- エンドロール -->
+            <div class="section">
+              <div class="endroll_screen">
+                <!-- endroll -->
+                <div class="endroll_inner">
+                  <div class="roll_text">
+                    <div class="endroll_flex_wrap">
+                      <div class="endroll_flex1">
+                        <p>Director</p>
+                        <p>Designer</p>
+                        <p>Corder</p>
+                        <p>Producer</p>
+                        <p>Written by</p>
+                        <p>Production Designer</p>
+                        <p>Editor</p>
+                        <p>Visual Effects</p>
+                        <p>Title and Opticals</p>
+                        <p>Presents</p>
+                        <p>In Association with</p>
+                      </div>
+                      <div class="endroll_flex2">
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>Takuro Ogawa</p>
+                        <p>ZeroPlus</p>
+                      </div>
+                    </div>
+                    <br><br><br><br>
+                    <p class="Quotations">Quotations</p>
+                    <br>
+                    <div class="quotaitions_wrap">
+                      Where there’s a will,there’s a way. &nbsp;&nbsp;&nbsp;<span>Abraham Lincol</span>
+                      Today is the first day of the rest of your life.&nbsp;&nbsp;&nbsp;<span>Charles Dederich</span>
+                      <br><br>
+                      The greatest glory in living lies not in never falling, but in rising every time we fall.&nbsp;&nbsp;&nbsp;<span>Nelson Mandela</span>
+                      <br><br>
+                      Victory belongs to the most persevering.&nbsp;&nbsp;&nbsp;<span>Napoléon Bonaparte</span>
+                      <br><br>
+                      You never fail until you stop trying.&nbsp;&nbsp;&nbsp;<span>Albert Einstein</span>
+                      <br><br>
+                      Genius is 1 percent inspiration and 99 percent perspiration.&nbsp;&nbsp;&nbsp;<span>Thomas Edison</span>
+                      <br><br>
+                      You miss 100% of the shots you don’t take.&nbsp;&nbsp;&nbsp;<span>Wayne Gretzky</span>
+                      <br><br>
+                      If you don’t like where you are, change it. You’re not a tree.&nbsp;&nbsp;&nbsp;<span>Jim Rohn</span>
+                      <br><br>
+                      If you want others to be happy, practice compassion. If you want to be happy, practice compassion.&nbsp;&nbsp;&nbsp;<span>Dalai Lama</span>
+                      <br><br>
+                      We cannot learn without pain.&nbsp;&nbsp;&nbsp;<span>Aristotle</span>
+                      <br><br>
+                      Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.&nbsp;&nbsp;&nbsp;<span>Steve Jobs</span>
+                      <br><br><br>
+                      If you can dream it, you can do it.&nbsp;&nbsp;&nbsp;<span>Walt Disney</span>
+                    </div>
+                    <br><br><br><br>
+                    <p class="using">DEVELOPED&nbsp;&nbsp;&nbsp;USING</p>
+                    <div class="used_wrap">
+                      <div class="first">
+                        <div class="apple">
+                          <img src="images/apple.jpg" alt="">
+                        </div>
+                        <div class="vscode">
+                          <img src="images/VScode.png" alt="">
+                        </div>
+                        <div class="jQuery">
+                          <img src="images/jQuery.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="second">
+                        <div class="xd">
+                          <img src="images/XD.png" alt="">
+                        </div>
+                        <div class="Illastrator">
+                          <img src="images/Illastrator.jpg" alt="">
+                        </div>
+                        <div class="pixaboy">
+                          <img src="images/pixaboy.jpg" alt="">
+                        </div>
+                        <div class="fontawesome">
+                          <img src="images/fontawesome.png" alt="">
+                        </div>
+                      </div>
+                      <div class="third">
+                        <div class="html">
+                          <img src="images/html.jpg" alt="">
+                        </div>
+                        <div class="css">
+                          <img src="images/css.jpg" alt="">
+                        </div>
+                        <div class="sass">
+                          <img src="images/sass.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="fourth">
+                        <div class="fullpage">
+                          <img src="images/fullpage.png" alt="">
+                        </div>
+                        <div class="js">
+                          <img src="images/js.jpg" alt="">
+                        </div>
+                        <div class="barba">
+                          <img src="images/barba.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <small>© 2020 Takuro’s First Portfolio</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+          integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"
+          integrity="sha256-se1LVUgnBaGcZvC0A7xkl3Lea7CRU5BQqUQT8ZvdH4A="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"
+          integrity="sha256-bmjt2PwiRoDWtD/Zbj9lJdkCvFIzYY7W/6q3ZcVjlu8="
+          crossorigin="anonymous"
+        ></script>
+        <script src="js/main.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/fullpage.js"></script>
+        <script src="js/easings.min.js"></script>
+        <script src="js/scrolloverflow.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/demo.js"></script>
+      </div>
+      <!----------- スクリーン（白い画面）ここまで ----------->
+        
+    </div>
+
+    <div class="the_end">
+      <img src="images/the_end.jpg" alt="">
+    </div>
+  </body>
+</html>

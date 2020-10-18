@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAKURO's Portfolio</title>
+    <link rel="stylesheet" href="https://tomap.co/ZeroPlusReset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/works.css" />
+    <link rel="stylesheet" href="js/fullpage.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+      integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "rth6ygz",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+  </head>
+  <body class="glitch_set imgloaded fp-viewing-top render">
+    <div class="cursor">
+      <img src="images/film.png" alt="" />
+    </div>
+    <div class="cursor_back"></div>
+
+    <div class="hamburger_bg">
+      <div class="hamburger_bg_inner"></div>
+    </div>
+
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="hamburger_nav Menu">
+      <ul class="hamburger_nav_ul Menu-list" data-offset="10">
+        <li class="Menu-list-item" data-offset="20" onclick>
+          <a href="index.html#top">
+            HOME
+            <span class="Mask"><span>HOME</span></span>
+            <span class="Mask"><span>HOME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="16" onclick>
+          <a href="./about.html">
+            ABOUT ME
+            <span class="Mask"><span>ABOUT ME</span></span>
+            <span class="Mask"><span>ABOUT ME</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="12" onclick>
+          <a href="./works.html">
+            MY WORKS
+            <span class="Mask"><span>MY WORKS</span></span>
+            <span class="Mask"><span>MY WORKS</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="8" onclick>
+          <a href="./index.html#contact">
+            GET IN TOUCH
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+            <span class="Mask"><span>GET IN TOUCH</span></span>
+          </a>
+        </li>
+        <li class="Menu-list-item" data-offset="4" onclick>
+          <a href="./index.html#endroll">
+            ENDROLL
+            <span class="Mask"><span>ENDROLL</span></span>
+            <span class="Mask"><span>ENDROLL</span></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!----------------- 映画館（黒い枠） ----------------->
+      <div class="theater">
+        <header>
+          <h1 class="underlayer_to_top">
+            <a href="#top">Takuro Ogawa</a>
+          </h1>
+          <div class="header_flex">
+            <div class="underlayer_icon_wrap">
+              <a href="https://twitter.com/@TAKURO_prg" target="_blank">
+                <!-- Twitter -->
+                <i class="fab fa-twitter theater_twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/takuro_nobishiro"
+                target="_blank"
+              >
+                <!-- インスタ -->
+                <i class="fab fa-instagram theater_insta"></i>
+              </a>
+              <a href="http://takuro-blog.taku-ringo.com/" target="_blank">
+                <!-- ブログ -->
+                <i class="fas fa-apple-alt theater_blog"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <a id="back_arrow_wrap" onclick="test()" href="./index.html#works">
+          <div class="back_arrow"></div>
+        </a>
+
+        <nav class="side_nav works_nav">
+          <ul id="menu">
+            <li data-menuanchor="1page">
+              <a href="#1page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="2page">
+              <a href="#2page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="3page">
+              <a href="#3page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="4page">
+              <a href="#4page">
+                <span></span>
+              </a>
+            </li>
+            <li data-menuanchor="5page">
+              <a href="#5page">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="scrollDown scrollDown_under">SCROLL DOWN</p>
+      </div>
+      <!-------------- 映画館（黒い枠）ここまで -------------->
+
+      <div class="screen works">
+        <!------------- スクリーン（白い画面） ------------->
+        <!-- Masterpieces -->
+        <div class="works_section">
+          <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+          </div>
+          <div class="scroll_wrap">
+            <div class="title_wrap works_wrap">
+              <div class="post_works_title">
+                <div class="title_heading">
+                  <div class="content__title">
+                    <h2>Masterpieces</h2>
+                  </div>
+                  <div class="content__title about_lines lines">
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                    <!-- なぜか lines の位置が微妙に変わってしまう... -->
+                  </div>
+                </div>
+                <div class="content__text">
+                  <p class="title_text">My works</p>
+                </div>
+                <div class="glitch_arrow content">
+                  <div class="arrow"></div>
+                </div>
+                <!-- 上下に動かす -->
+              </div>
+              <div class="title_img">
+                <div class="glitch___works-wrap">
+                  <div class="works_img"></div>
+                  <div class="works_img"></div>
+                  <div class="works_img"></div>
+                  <div class="works_img"></div>
+                  <div class="works_img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg">
+            <div class="bg_inner"></div>
+          </div>
+
+          <div class="works_content inner">
+            <div class="left_side">
+              <article class="left_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/MyEC/index.html"
+                    class="L_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="left_article_img"
+                      src="images/works/ninco.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="left_works_description">
+                    <h3>
+                      <a href="masterpieces/MyEC/index.html" target="_blank"
+                        >ECサイト作成</a
+                      >
+                    </h3>
+                    <p>
+                      本格的なECサイトを作成しました。データベースをJavaScriptを用いて管理したり、様々な動きを付けたりとJavaScriptの使い方がよく分かり慣れることができました。また、エラー耐性も少しつきました。
+                    </p>
+                    <p>
+                      HTML / CSS / JavaScript / jQuery / レスポンシブデザイン
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="left_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="https://axiapet.com/dog_food/"
+                    class="L_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="left_article_img"
+                      src="images/works/dog_food.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="left_works_description">
+                    <h3>
+                      <a href="https://axiapet.com/dog_food/" target="_blank">
+                        ドッグフードのLP
+                      </a>
+                    </h3>
+                    <p>
+                      ペットシャンプーのLPで好評をいただき再び同じクライアント様から依頼を受けて創らせていただいた1ページです。納品した後に感謝とお褒めのお言葉をいただいた際はこの上ない喜びに包まれました。
+                    </p>
+                    <p>
+                      HTML / CSS / JavaScript / jQuery / レスポンシブデザイン /
+                      XD
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="left_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/ニセコ白雲荘/index.html"
+                    class="L_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="left_article_img"
+                      src="images/works/niseko.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="left_works_description">
+                    <h3>
+                      <a
+                        href="masterpieces/ニセコ白雲荘/index.html"
+                        target="_blank"
+                        >『ニセコ 白雲荘』模写</a
+                      >
+                    </h3>
+                    <p>
+                      アニメーションが豊富な1ページです。HTMLとCSSだけで散るように降る雪を実装してみました。
+                    </p>
+                    <p>HTML / CSS</p>
+                  </div>
+                </div>
+              </article>
+              <article class="left_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/Lesson5practice2/code/index.html"
+                    class="L_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="left_article_img"
+                      src="images/works/zero1.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="left_works_description">
+                    <h3>
+                      <a
+                        href="masterpieces/Lesson5practice2/code/index.html"
+                        target="_blank"
+                        >スクールのオリジナルサイト1</a
+                      >
+                    </h3>
+                    <p>
+                      初めてレスポンシブデザインを施しました。また、Google
+                      Mapを埋め込む方法を覚えました。
+                    </p>
+                    <p>HTML / CSS / レスポンシブデザイン</p>
+                  </div>
+                </div>
+              </article>
+              <article class="left_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/Lesson5practice3/code/index.html"
+                    class="L_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="left_article_img"
+                      src="images/works/zero2.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="left_works_description">
+                    <h3>
+                      <a
+                        href="masterpieces/Lesson5practice3/code/index.html"
+                        target="_blank"
+                        >スクールのオリジナルサイト2</a
+                      >
+                    </h3>
+                    <p>
+                      動画を埋め込んだサイトです。ホバーすると色がついて拡大するといったアニメーションも実装しました。レスポンシブデザイン実装済み。
+                    </p>
+                    <p>HTML / CSS / レスポンシブデザイン</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="right_side">
+              <article class="right_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/fromDesignComp/index.html"
+                    class="R_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="right_article_img"
+                      src="images/works/kanpu.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="right_works_description">
+                    <h3>
+                      <a
+                        href="masterpieces/fromDesignComp/index.html"
+                        target="_blank"
+                        >デザインカンプからのコーディング</a
+                      >
+                    </h3>
+                    <p>
+                      初めてデザインカンプからコーディングをしたものです。クライアントさんからの依頼だと思って細かいところまで実践的に作成しました。かかった時間は約17時間（2日）でした。
+                    </p>
+                    <p>HTML / CSS / jQuery / レスポンシブデザイン / XD</p>
+                  </div>
+                </div>
+              </article>
+              <article class="right_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="http://axiapet.com/pet_shampoo/"
+                    class="R_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="right_article_img"
+                      src="images/works/pet_shampoo.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="right_works_description">
+                    <h3>
+                      <a href="http://axiapet.com/pet_shampoo/" target="_blank"
+                        >ペットシャンプーのLP</a
+                      >
+                    </h3>
+                    <p>
+                      初めて案件をいただき、クライアント様とこまめにコミュニケーションを取りながら責任感を持って創らせていただいた1ページです。
+                    </p>
+                    <p>
+                      HTML / CSS / JavaScript / jQuery / レスポンシブデザイン /
+                      XD
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="right_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/iSara/index.html"
+                    class="R_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="right_article_img"
+                      src="images/works/isara.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="right_works_description">
+                    <h3>
+                      <a href="masterpieces/iSara/index.html" target="_blank"
+                        >『iSara』模写</a
+                      >
+                    </h3>
+                    <p>
+                      私が初めて挑戦した模写です。量が多くて、やりごたえ抜群でした。膨大な時間をかけてやったので、終わった頃にはマークアップ言語(プログラミング)に大きな自信が持てました。
+                    </p>
+                    <p>HTML / CSS</p>
+                  </div>
+                </div>
+              </article>
+              <article class="right_article" data-fadeIn>
+                <div class="article_img_wrap">
+                  <a
+                    href="masterpieces/TabMenu/index.html"
+                    class="R_article_img_link"
+                    target="_blank"
+                  >
+                    <img
+                      class="right_article_img"
+                      src="images/works/avengers.png"
+                      alt=""
+                    />
+                  </a>
+                  <div class="right_works_description">
+                    <h3>
+                      <a href="masterpieces/TabMenu/index.html" target="_blank"
+                        >タブメニュー</a
+                      >
+                    </h3>
+                    <p>
+                      jQueryを使ってタブメニューを実装しました。DOM操作をすることに慣れることができました。
+                    </p>
+                    <p>HTML / CSS / jQuery</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="stripe"></div>
+
+          <footer class="works_footer">
+            <div class="footer_icon_wrap">
+              <div class="icon mail">
+                <a href="mailto:tackman8716@gmail.com" target="_blank">
+                  <i class="far fa-envelope-open"></i>
+                </a>
+                <a
+                  class="adress"
+                  href="mailto:tackman8716@gmail.com"
+                  target="_blank"
+                >
+                  tackman8716@gmail.com
+                </a>
+              </div>
+              <div class="icon">
+                <a href="https://twitter.com/@TAKURO_prg" target="_blank">
+                  <!-- Twitter -->
+                  <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/takuro_nobishiro"
+                  target="_blank"
+                >
+                  <!-- インスタ -->
+                  <i class="fab fa-instagram insta"></i>
+                </a>
+                <a href="http://takuro-blog.taku-ringo.com/" target="_blank">
+                  <!-- ブログ -->
+                  <i class="fas fa-apple-alt blog"></i>
+                </a>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!----------- スクリーン（白い画面）ここまで ----------->
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+      integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"
+      integrity="sha256-se1LVUgnBaGcZvC0A7xkl3Lea7CRU5BQqUQT8ZvdH4A="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"
+      integrity="sha256-bmjt2PwiRoDWtD/Zbj9lJdkCvFIzYY7W/6q3ZcVjlu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo.js"></script>
+  </body>
+</html>

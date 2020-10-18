@@ -1,0 +1,175 @@
+/* Mastepieces 〜上層〜 */
+.pre_works_title {
+  font-family: "Trattatello";
+  position: absolute;
+  top: 43.865%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+
+/* About Me 〜下層〜 */
+.works_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.works_section h2 {
+  padding: 15px 0 35px;
+}
+
+/* bgmove */
+@keyframes bgmove {
+  0% {
+    left: -100%;
+    opacity: 0.7;
+  }
+
+  100% {
+    left: 0%;
+    opacity: 0.3;
+  }
+}
+
+.bg {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.bg_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, #6cb8ff, #b7cf91, #ff9b6c);
+  animation: bgmove 8s infinite alternate;
+}
+
+.works_wrap {
+  background-color: #fff5f5;
+}
+
+.post_works_title {
+  font-family: "Trattatello";
+  position: absolute;
+  top: 48.5%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+
+.works_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/apples.jpg) no-repeat 50% 50%;
+  background-color: var(--blend-color-1);
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+}
+
+/* .screen {
+  box-shadow: "0 0 100px #fff" !important;
+} */
+/* 
+.works_screen {
+  box-shadow: "0 0 100px #fff";
+} */
+
+.works_content {
+  display: flex;
+  width: 100%;
+  margin: 140px auto 110px;
+}
+
+.left_side,
+.right_side {
+  width: 40%;
+  margin: 5%;
+}
+
+.works_content article {
+  margin: 70px auto;
+}
+
+.left_article_img,
+.right_article_img {
+  filter: grayscale(96%);
+  cursor: pointer;
+}
+
+.article_img_wrap {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.article_img_wrap:hover {
+  box-shadow: 0 0 30px #fff;
+}
+
+.article_img_wrap:hover + .left_works_description:hover,
+.article_img_wrap:hover + .right_works_description:hover {
+  height: auto;
+  transition: 0.3s;
+}
+
+.left_works_description,
+.right_works_description {
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  background-color: rgba(252, 251, 251, 0.6);
+  line-height: 1.4em;
+  color: #837171;
+  margin: -2px 0 3px;
+  font-family: "CineCaption";
+  box-shadow: 0 0 20px #fff;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.L_article_img_link.open + .left_works_description,
+.R_article_img_link.open + .right_works_description {
+  height: auto;
+}
+
+.left_works_description h3,
+.right_works_description h3 {
+  font-size: 17.3px;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+
+.left_works_description h3 a,
+.right_works_description h3 a {
+  display: inline-block;
+  border-bottom: 1px solid #837171;
+}
+
+.left_works_description p:first-of-type,
+.right_works_description p:first-of-type {
+  font-size: 13.6px;
+  margin: 8px auto 13px;
+  letter-spacing: 1.3px;
+}
+
+.left_works_description p:last-of-type,
+.right_works_description p:last-of-type {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+}
+
+.works_footer {
+  margin-top: 100px;
+}
